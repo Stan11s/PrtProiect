@@ -65,6 +65,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Menu;
             this.textBox1.Location = new System.Drawing.Point(75, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 20);
@@ -97,12 +99,14 @@
             // panelDragDrop
             // 
             this.panelDragDrop.AllowDrop = true;
-            this.panelDragDrop.BackColor = System.Drawing.SystemColors.Info;
+            this.panelDragDrop.BackColor = System.Drawing.SystemColors.InfoText;
             this.panelDragDrop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDragDrop.Controls.Add(this.label4);
-            this.panelDragDrop.Location = new System.Drawing.Point(100, 68);
+            this.panelDragDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDragDrop.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelDragDrop.Location = new System.Drawing.Point(64, 68);
             this.panelDragDrop.Name = "panelDragDrop";
-            this.panelDragDrop.Size = new System.Drawing.Size(147, 78);
+            this.panelDragDrop.Size = new System.Drawing.Size(224, 187);
             this.panelDragDrop.TabIndex = 7;
             this.panelDragDrop.DragDrop += new System.Windows.Forms.DragEventHandler(this.panelDragDrop_DragDrop);
             this.panelDragDrop.DragEnter += new System.Windows.Forms.DragEventHandler(this.panelDragDrop_DragEnter);
@@ -113,7 +117,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 13);
+            this.label4.Size = new System.Drawing.Size(204, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Drag  and drop fisier pdf aici";
             this.label4.Click += new System.EventHandler(this.label4_Click);
